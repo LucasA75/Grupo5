@@ -170,14 +170,21 @@ we can only buy the two least expensive items.
 Write an algorithm that takes in three user inputs and
 outputs the two smallest prices to the console. /* */
 
-//FUNCION INCOMPLETA!!
-var arr = [3, 2, 1] // esta es la lista
-var menor1 = arr[0]
-var menor2 = arr[1]; // mayor es igual a la posicion 0 del array, para que empieze la iteracion desde el primero
-for (var i = 0; i < arr.length; i++) { 
-    if (mayor < arr[i] ) { 
-
-        mayor = arr[i]; 
+//Funcion que entrega los dos valores menores entre 3 numeros. by Abril
+function menorPrecio(x,y,z){
+    if (x<y){
+        var bar1=x;
+        var bar2=y;
+    
+    }else{
+        bar1=y;
+        bar2=x;
+    } if (bar2<z){
+        bar1=bar1;
+        bar2=bar2;
+    
+    } else {
+        bar2=z
     }
 }
-console.log(mayor);
+

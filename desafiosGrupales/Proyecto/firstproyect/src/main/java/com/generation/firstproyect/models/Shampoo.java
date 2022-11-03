@@ -1,25 +1,48 @@
 package com.generation.firstproyect.models;
 
-public class Shampoo {
-    String colorDeEnvase;
-    String tapa;
-    String FormatoDeEnvase;
-    int largo;
-    int volumen;
-    String olor;
-    String marca;
 
-    void limpiar(){
-        System.out.println("cabello limpio");
+public class Shampoo extends Cuidado_personal {
+    //Caracteristicas.
+    Boolean sal;
+    String cabello;
+
+
+    //Constructores.
+    public Shampoo() {
+        super();
     }
-    void aromatizar(Integer PH){
-        if(PH>5){
-            System.out.println("cambia de shampoo");
-        }else{
-            System.out.println("quedo olorocito mi rey");
-        }
+
+    public Shampoo(String color_envase, int volumen_envase, String textura, String ingrediente, int ph,String olor, Boolean sal, String cabello) {
+        super(color_envase, volumen_envase, textura, ingrediente, ph, olor);
+        this.sal = sal;
+        this.cabello = cabello;
     }
-    void espuma(){
-        System.out.println("enjuage mi rey");
+
+
+
+
+    //Getters and setters.
+    public Boolean getSal() {
+        return sal;
     }
+
+    public void setSal(Boolean sal) {
+        this.sal = sal;
+    }
+
+    public String getCabello() {
+        return cabello;
+    }
+
+    public void setCabello(String cabello) {
+        this.cabello = cabello;
+    }
+
+    //To string.
+    @Override
+    public String toString() {
+        return super.toString() + "Shampoo [sal=" + sal + ", cabello=" + cabello + "]";
+    }
+
+    
 }

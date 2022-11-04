@@ -82,7 +82,23 @@ public class Usuario_general {
             }
         }
     }
- 
+
+    //funcion de Login
+    public Boolean login(String nombre, String contrasena){
+        try {
+            if(nombre == this.nombre && contrasena == this.contraseña){
+                return true;
+            }
+            else{
+            return false;
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+            return false;
+        }
+        
+    }
+
 
     //To string.
 

@@ -28,5 +28,5 @@ public class Admin extends Usuario_general {
         return super.toString() + "Admin []";
     }
     
-
+//asdasd
 }

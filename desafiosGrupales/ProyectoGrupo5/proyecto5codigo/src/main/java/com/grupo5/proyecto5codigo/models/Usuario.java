@@ -22,9 +22,6 @@ public class Usuario extends Usuario_general {
     public String toString() {
         return super.toString() +"Usuario []";
     }
-
-
-    
     
     
 }
